@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Thank you — Crest Immigration Law Firm</title>
+  <meta http-equiv="refresh" content="3;url=contact.html">
+  <style>
+    body{font-family: Arial, Helvetica, sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;margin:0;background:#f3f6fb;color:#0f172a}
+    .card{max-width:520px;padding:28px;border-radius:10px;background:#fff;box-shadow:0 6px 18px rgba(15,23,42,0.08);text-align:center}
+    a{color:#2563eb}
+  </style>
+  <script>
+    // Countdown display and redirect fallback
+    document.addEventListener('DOMContentLoaded', function(){
+      var seconds = 3;
+      var el = null;
+      function update(){
+        if(!el) el = document.getElementById('countdown');
+        if(el) el.textContent = seconds;
+        if(seconds<=0) return;
+        seconds--;
+        setTimeout(update, 1000);
+      }
+      setTimeout(update, 250);
+    });
+  </script>
+</head>
+<body>
+  <div class="card">
+    <h1>Thanks — message sent</h1>
+    <p>We'll get back to you shortly. You will be returned to the contact page automatically.</p>
+    <p>If you are not redirected, <a href="contact.html">click here to return to Contact</a>.</p>
+  </div>
+</body>
+</html>
